@@ -1,0 +1,8 @@
+uv sync
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+python -m pip install uv
+winget install astral-sh.uv
+uv sync
+cd examples\hello-world
+npm install
+npm run render
